@@ -70,8 +70,8 @@ module.exports = function(grunt) {
     compass: {
       common: {
         options: {
-          sassDir: 'src/scss/',
-          cssDir: 'src/styles/'
+          sassDir: 'src/assets/scss/',
+          cssDir: 'src/assets/styles/'
         }
       }
     },
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         tasks: ['jshint:lib_test', 'qunit']
       },
       compass: {
-        files: 'src/scss/*.scss',
+        files: 'src/assets/scss/*.scss',
         tasks: ['compass']
       }
     }

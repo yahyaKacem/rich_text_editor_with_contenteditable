@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="editor">
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Plunker</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body ng-controller="MainCtrl">
+  <header class="navbar-fixed-top well">
+    <div id="toolBar1" ng-include="'assets/tpls/toolbar1.tpl.html'"></div>
+    <div id="toolBar2" ng-include="'assets/tpls/toolbar2.tpl.html'"></div>
+  </header>
+  <div
+    ng-init="initDoc()"
+    ng-include="'assets/tpls/editor.tpl.html'"
+    class="container well editor_wrapper clearfix"
+  >
+  </div>
+  <script src="vendors/underscore/underscore.js"></script>
+  <script src="vendors/angular-unstable/angular.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>

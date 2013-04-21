@@ -1,0 +1,9 @@
+[
+  {"label": "Very small",   "value": "1"},
+  {"label": "A bit small",  "value": "2"},
+  {"label": "Normal",       "value": "3"},
+  {"label": "Medium-large", "value": "4"},
+  {"label": "Big",          "value": "5"},
+  {"label": "Very big",     "value": "6"},
+  {"label": "Maximum",      "value": "7"}
+]

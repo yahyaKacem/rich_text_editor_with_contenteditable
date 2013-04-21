@@ -1,0 +1,45 @@
+<select
+  ng-model="format"
+  ng-change="formatDoc('formatblock')"
+  ng-options="formatOption.value as formatOption.label for formatOption in formatOptions"
+>
+  <option ng-selected="selected" value="">- formatting -</option>
+</select>
+<select
+  ng-model="font.family"
+  ng-change="formatDoc('fontname')"
+  ng-options="fontFamilyOption.value as fontFamilyOption.label for fontFamilyOption in fontFamilyOptions"
+>
+  <option selected value="">- font family -</option>
+</select>
+<select
+  ng-model="font.size"
+  ng-change="formatDoc('fontsize')"
+  ng-options="fontSizeOption.value as fontSizeOption.label for fontSizeOption in fontSizeOptions"
+>
+  <option selected value="">- size -</option>
+</select>
+<select
+  ng-model="foreColor"
+  ng-change="formatDoc('forecolor')"
+  ng-options="color.value as color.label for color in colors"
+>
+  <option value="" selected>- color -</option>
+</select>
+<select
+  ng-model="backColor"
+  ng-change="formatDoc('backcolor'"
+  ng-options="color.value as color.label for color in colors"
+>
+  <option value="" selected>- background -</option>
+</select>
+<span id="editMode" class="">
+  <button
+    id="switchBox"
+    ng-model="docMode"
+    ng-click="setDocMode(docMode)"
+    class="btn btn-primary {{state}}"
+    bs-button-select="['Show HTML', 'Hide HTML']"
+  >
+  </button>
+</span>

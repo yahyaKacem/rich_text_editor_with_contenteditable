@@ -5,7 +5,7 @@
     "underscore": null,
     "font-awesome": null,
     "sass-bootstrap": null,
-    "unstable-angular-complete": null
+    "angular-unstable": null
   },
   "ignore": [
     "**/.*",
